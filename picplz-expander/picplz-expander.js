@@ -6,4 +6,4 @@ function setPicplzImage(picplz_id) {
                  document.getElementById("picplzImg"+picplz_id).src=item.pic_files['640r'].img_url; 
             });
         });
-}
+};

@@ -2,13 +2,15 @@
 Contributors: Kristian Olsson
 Donate link: http://www.kasa.nu/
 Tags: picplz, expander
-Tested up to: 3.0.x
+Tested up to: 3.1
+Requires at least: 3.0
+Stable tag: trunk
 
 Scans posts for picplz links and expands them to show the image.
 
 == Description ==
 
-This plugin will scan all posts for links to picplz.com/xxx links and add a image tag 
+This plugin will scan all posts for picplz.com/xxx links and add a image tag 
 to the end of the post showing the picplz image.
 
 == Installation ==

@@ -8,10 +8,9 @@ Author: Kristian Olsson
 Author URI: http://www.kasa.nu
 */
 ?>
-
 <?php
 wp_enqueue_script('jquery');
-wp_enqueue_script('picplz-expander', '/wp-content/plugins/picplz-expander/picplz-expander.js', array('jquery') ); 
+wp_enqueue_script('picplz-expander', plugins_url('picplz-expander.js', __FILE__), array('jquery') ); 
 
 function showpicplz($text){
   $foo = $text;
