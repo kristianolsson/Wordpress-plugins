@@ -1,8 +1,6 @@
-Wordpress plugins
+My wordpress plugins
 =================
 
-My Wordpress plugins
-
-* Picplz Expander - URL TBD
-* Youtube Expander - URL TBD
+* Picplz Expander - <http://wordpress.org/extend/plugins/picplz-expander/>
+* Youtube Expander - <http://wordpress.org/extend/plugins/youtube-expander/>
 
