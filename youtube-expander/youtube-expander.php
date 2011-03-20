@@ -3,7 +3,7 @@
 Plugin Name: Youtube Expander
 Plugin URI: http://www.kasa.nu
 Description: Scans posts for Youtube URLs and expands them to show a playable video at the end of the post.  
-Version: 1.0
+Version: 1.1
 Author: Kristian Olsson
 Author URI: http://www.kasa.nu
 */
@@ -23,6 +23,12 @@ function showyoutube($text){
 //$images .= "<a href='http://youtube.com/{$match}'><img src='http://youtube.com/show/large/{$match}' class='aligncenter' /></a>";
     }
     $text = $foo . '<center>' . $images . '</center>';
+  }
+  if (preg_match_all('#youtu.be/([\d\w]+)#', $tmp, $matches, PREG_PATTERN_ORDER) > 0) {
+    foreach ($matches[1] as $match) {
+ 		$mov .= '<object width="'.$widthwd.'" height="'.$heightwd.'" allowfullscreen="true" type="application/x-shockwave-flash" data="http://www.youtube.com/v/'.$match.'"><param name="movie" value="http://www.youtube.com/v/'.$match.'" /></object>';
+    }
+    $text = $foo . '<center>' . $mov . '</center>';
   }
 
   return $text;

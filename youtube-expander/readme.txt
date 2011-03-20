@@ -10,7 +10,7 @@ Scans posts for Youtube URLs and expands them to show a playable video at the en
 
 == Description ==
 
-This plugin will scan all posts for youtube.com/watch\?v=xxx links and add a video player 
+This plugin will scan all posts for youtube.com/watch\?v=xxx or youtu.be/xxx links and add a video player 
 to the end of the post to play the clip.
 
 == Installation ==
@@ -22,6 +22,9 @@ To install the Youtube Expander:
 1. Include youtube links in your posts 
 
 == Changelog ==
+
+= 1.1 =
+* Support for youtu.be links.
 
 = 1.0 =
 * First version.
